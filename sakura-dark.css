@@ -54,6 +54,7 @@ h2 {
 
 h3 {
   font-size: 1.75em;
+  text-align-last: left;
 }
 
 h4 {
@@ -93,6 +94,34 @@ a:visited {
 a:hover {
   color: #c9c9c9;
   border-bottom: 2px solid #c9c9c9;
+}
+
+.post {
+  height: 90px;
+  border: 2px solid #c9c9c9;
+  color: #c9c9c9;
+  padding: 0.4em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;       /* The same as your div height */
+  font-size: 30px;
+  margin: 2.5rem;
+  margin-left:0px;margin-right:0px;
+  transition: 0.3s;
+}
+
+.post:hover {
+  height: 90px;
+  border: 2px solid #c9c9c9;
+  color: #c9c9c9;
+  padding: 0.4em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;       /* The same as your div height */
+  font-size: 30px;
+  margin: 2.5rem;
+  margin-left:-5px;margin-right:-5px;
+  transition: 0.3s;
 }
 
 ul {
