@@ -5,6 +5,14 @@
  * Project: https://github.com/oxalorg/sakura/
  */
 /* Body */
+:root {
+    --foreground: #e3f5fc;
+    --background: #020d12;
+    --primary: #b051e6;
+    --secondary: #001119;
+    --accent: #5719e6;
+}
+
 html {
   font-size: 62.5%;
   font-family: 'Nunito Sans', sans-serif;
@@ -16,8 +24,8 @@ body {
   line-height: 1.618;
   max-width: 38em;
   margin: auto;
-  color: #c9c9c9;
-  background-color: #222222;
+  color: var(--foreground);
+  background-color: var(--background);
   padding: 13px;
 }
 
@@ -84,26 +92,29 @@ hr {
 
 a {
   text-decoration: none;
-  color: #4a4a4a;
+  color: var(--foreground);
 }
 
 a:active{
-  color: #4a4a4a;
+  color: var(--foreground);
 }
 
 a:visited {
-  color: #4a4a4a;
+  background: linear-gradient(var(--primary), var(--accent));
+  background-clip: text;
+  color: transparent;
 }
 
 a:hover {
-  color: #c9c9c9;
-  border-bottom: 2px solid #c9c9c9;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background-clip: text;
+  color: transparent;
 }
 
 .post {
   height: 90px;
   border: 2px solid #c9c9c9;
-  color: #c9c9c9;
+  color: var(--foreground);
   padding: 0.4em;
   text-align: center;
   vertical-align: middle;
@@ -115,17 +126,18 @@ a:hover {
 }
 
 .post p {
-    color: #ffffff;
+    color: var(--foreground);
 }
 
 .post:hover p {
-  color: #c9c9c9;
+  color: var(--foreground);
+  text-decoration: underline;
 }
 
 .post:hover {
   height: 90px;
-  border: 2px solid #c9c9c9;
-  background-color: #cccccc10;
+  border: 2px solid var(--foreground);
+  background-color: #e3f5fc10;
   padding: 0.4em;
   text-align: center;
   vertical-align: middle;
@@ -153,9 +165,9 @@ blockquote {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-right: 0.8em;
-  border-left: 5px solid #ffffff;
+  border-left: 5px solid var(--accent);
   margin-bottom: 2.5rem;
-  background-color: #4a4a4a;
+  background-color: var(--secondary);
 }
 
 blockquote p {
@@ -194,7 +206,7 @@ footer {
     width: 100%;
     height: 30px;
     margin: 0 auto;
-    background-color: #1a1a1a;
+    background-color: var(--secondary);
 }
 
 pre > code {
@@ -276,3 +288,4 @@ label, legend, fieldset {
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
+
