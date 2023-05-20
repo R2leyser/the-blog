@@ -125,12 +125,15 @@ a:hover {
 }
 
 .post p {
-    color: var(--foreground);
+  color: var(--foreground);
+  transition: 0.3s;
 }
 
 .post:hover p {
   color: var(--foreground);
   text-decoration: underline;
+  font-size: 35px;
+  transition: 0.3s;
 }
 
 .post:hover {
@@ -164,7 +167,13 @@ blockquote {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   padding-right: 0.8em;
-  border-left: 5px solid var(--accent);
+  border-left: 5px solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      var(--primary), 
+      var(--accent)
+    ) 1 100%;
   margin-bottom: 2.5rem;
   background-color: var(--secondary);
 }
