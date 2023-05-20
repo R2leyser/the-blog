@@ -100,10 +100,7 @@ a:active{
 }
 
 a:visited {
-  background: linear-gradient(var(--primary), var(--accent));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--foreground);
 }
 
 a:hover {
