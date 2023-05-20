@@ -102,12 +102,14 @@ a:active{
 a:visited {
   background: linear-gradient(var(--primary), var(--accent));
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
 a:hover {
   background: linear-gradient(90deg, var(--primary), var(--accent));
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -183,7 +185,7 @@ img, video {
 
 /* Pre and Code */
 pre {
-  background-color: #4a4a4a;
+  background-color: var(--secondary);
   display: block;
   padding: 1em;
   overflow-x: auto;
@@ -195,7 +197,7 @@ pre {
 code, kbd, samp {
   font-size: 0.9em;
   padding: 0 0.5em;
-  background-color: #4a4a4a;
+  background-color: var(--secondary);
   white-space: pre-wrap;
 }
 
