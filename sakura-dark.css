@@ -110,6 +110,19 @@ a:hover {
   color: transparent;
 }
 
+article a{
+  text-decoration: underline;
+}
+
+article a:hover {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.3s;
+  text-decoration: bold;
+}
+
 .post {
   height: 90px;
   border: 2px solid #c9c9c9;
