@@ -9,7 +9,7 @@
     --foreground: #e3f5fc;
     --background: #020d12;
     --primary: #b051e6;
-    --secondary: #001119;
+    --secondary: #041A24;
     --accent: #5719e6;
 }
 
@@ -93,6 +93,25 @@ hr {
 a {
   text-decoration: none;
   color: var(--foreground);
+}
+
+.pfp img {
+    height: 15rem;
+    width: 15rem;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+    transition: 0.4s;
+    box-shadow: 0.5rem 0.5rem 5px var(--secondary);
+}
+
+.pfp:hover img {
+    transform: translate(-1rem, -1rem);
+    box-shadow: 1.5rem 1.5rem 10px var(--secondary);
+    transition: 0.4s;
 }
 
 a:active{
@@ -321,4 +340,6 @@ label, legend, fieldset {
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
+
+
 
