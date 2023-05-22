@@ -105,12 +105,12 @@ a {
     margin-bottom: 3rem;
     border-radius: 50%;
     transition: 0.4s;
-    box-shadow: 0.5rem 0.5rem 5px var(--secondary);
+    box-shadow: 0.5rem 0.5rem 5px var(--primary);
 }
 
-.pfp:hover img {
+.pfp img:hover {
     transform: translate(-1rem, -1rem);
-    box-shadow: 1.5rem 1.5rem 10px var(--secondary);
+    box-shadow: 1.5rem 1.5rem 10px var(--accent);
     transition: 0.4s;
 }
 
