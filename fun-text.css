@@ -35,3 +35,13 @@
         transform: translateY(0);
     }
 }
+
+.gradient-text::selection {
+    background: var(--secondary);
+    color:var(--foreground)
+}
+.waving-text span::selection {
+    background: var(--secondary);
+    color:var(--foreground)
+}
+
