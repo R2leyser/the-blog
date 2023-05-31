@@ -418,15 +418,30 @@ nav li.current a:active{
 }
 
 nav>ul {
-  list-style-type: none;
-  padding: 0;
-  display:flex;
-  /* margin-inline: auto; */
-  justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    display:flex;
+    /* margin-inline: auto; */
+    justify-content: center;
+    /* border: 1px solid var(--primary) */
+}
+
+nav li:first-child,
+nav li:last-child {
+    flex-grow: 1;
+}
+
+nav li:last-child {
+    text-align: left;
+}
+
+nav li:first-child {
+    text-align: right;
 }
 
 nav li {
     padding-inline: 2rem;
+    border-bottom: 2px solid var(--foreground);
     margin: 0;
 }
 
@@ -435,6 +450,10 @@ nav li.current {
     background: var(--background);
     color: var(--foreground);
     margin: 0;
+    border-left: 2px solid var(--foreground);
+    border-right: 2px solid var(--foreground);
+    border-top: 2px solid var(--foreground);
+    border-bottom: none;
 }
 
 .links {
