@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.95em;
   text-align-last: left;
 }
 
@@ -134,82 +134,6 @@ a:hover {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-
-article {
-}
-
-article a{
-  text-decoration: underline;
-}
-
-article a:hover {
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: 0.3s;
-  text-decoration: bold;
-}
-
-article h2 {
-  font-size: 1.5em;
-}
-
-article img {
-    display:flex;
-    margin: auto;
-}
-
-.post {
-  background-color: var(--secondary);
-  height: 90px;
-  color: var(--foreground);
-  padding: 0.4em;
-  vertical-align: middle;
-  line-height: 90px;       /* The same as your div height */
-  font-size: 30px;
-  margin: 2.5rem;
-  margin-left:0px;margin-right:0px;
-  transition: 0.3s;
-}
-
-.post .date {
-  position: absolute;
-  transform: translate(950%, -60%);
-  font-size: 15px;
-}
-
-.post .post-header {
-  transition: 0.3s;
-  font-size: 30px;
-  text-align-last: left;
-  vertical-align: top;
-  margin-bottom: -10px;
-  margin-top: 0px;
-  counter-increment: section-counter;
-}
-
-.post small {
-  font-size: 70%;
-}
-
-.post:hover h1 {
-  color: var(--foreground);
-  text-decoration: underline;
-  /* font-size: 35px; */
-  transition: 0.3s;
-}
-
-.post:hover {
-  height: 90px;
-  padding: 0.4em;
-  vertical-align: middle;
-  line-height: 90px;       /* The same as your div height */
-  font-size: 30px;
-  margin: 2.5rem;
-  margin-left:-5px;margin-right:-5px;
-  transition: 0.3s;
 }
 
 ul {
@@ -383,15 +307,6 @@ label, legend, fieldset {
   font-weight: 600;
 }
 
-/* ::selection { */
-/*     background: var(--secondary) */
-/* } */
-
-.hero {
-    margin: 0 -10rem;
-    
-}
-
 nav {
     /* width: 100vw; */
     position:sticky;
@@ -454,30 +369,4 @@ nav li.current {
     border-right: 2px solid var(--foreground);
     border-top: 2px solid var(--foreground);
     border-bottom: none;
-}
-
-.links {
-    text-align:center;
-    list-style-type:none;
-    font-size: 150%;
-}
-
-.project {
-    display:grid;
-    background: var(--secondary);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    grid-template-columns: 2fr 5fr;
-    gitd-template-rows: 2fr 2fr;
-    column-gap: 3rem;
-}
-
-.project>img {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  margin: auto;
-  width 90%;
-  height: auto;
 }

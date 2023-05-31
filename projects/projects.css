@@ -1,0 +1,19 @@
+.project {
+    display:grid;
+    background: var(--secondary);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: 2fr 5fr;
+    gitd-template-rows: 2fr 2fr;
+    column-gap: 3rem;
+}
+
+.project>img {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin: auto;
+  width 90%;
+  height: auto;
+}
