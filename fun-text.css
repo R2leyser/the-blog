@@ -1,11 +1,3 @@
-:root {
-    --foreground: #e3f5fc;
-    --background: #020d12;
-    --primary: #b051e6;
-    --secondary: #041A24;
-    --accent: #5719e6;
-}
-
 .waving-text {
     display: inline-block;
     overflow: hidden;
@@ -37,11 +29,12 @@
 }
 
 .gradient-text::selection {
-    background: var(--secondary);
+    /* background: var(--secondary); */
     color:var(--foreground)
 }
+
 .waving-text span::selection {
-    background: var(--secondary);
+    /* background: var(--secondary); */
     color:var(--foreground)
 }
 
