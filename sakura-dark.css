@@ -59,24 +59,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+  letter-spacing: .75px;
   font-size: 2.35em;
 }
 
 h2 {
+  letter-spacing: .5px;
   font-size: 1.95em;
   text-align-last: left;
 }
 
 h3 {
+  letter-spacing: .25px;
   font-size: 1.75em;
   text-align-last: left;
 }
 
 h4 {
+  letter-spacing: .25px;
   font-size: 1.5em;
 }
 
 h5 {
+  letter-spacing: .25px;
   font-size: 1.25em;
 }
 

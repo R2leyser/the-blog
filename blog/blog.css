@@ -1,18 +1,31 @@
+body {
+    max-width: 50em;
+}
+
+.blog-layout{
+    display:flex;
+    gap: 4rem;
+}
+
+article {
+    width: --clamp(5em 50% 50em) !important;
+}
+
+aside a,
 article a{
   text-decoration: underline;
 }
 
-article a:hover {
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+aside a:hover,
+article>a:hover {
+  color:var(--accent);
   transition: 0.3s;
   text-decoration: bold;
 }
 
 article h2 {
   font-size: 1.5em;
+  padding-top: 3.5rem;
 }
 
 article img {
@@ -69,4 +82,9 @@ article img {
   margin: 2.5rem;
   margin-left:-5px;margin-right:-5px;
   transition: 0.3s;
+}
+
+aside {
+  position: sticky;
+  margin-top: 10rem;
 }
