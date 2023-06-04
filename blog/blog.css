@@ -4,11 +4,11 @@ body {
 
 .blog-layout{
     display:flex;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 article {
-    width: --clamp(5em 50% 50em) !important;
+    width: 130rem;
 }
 
 aside a,
