@@ -9,11 +9,21 @@ body {
 
 article {
     width: 130rem;
+    text-align: justify;
+}
+
+article h1 {
+    text-align: center;
 }
 
 aside a,
 article a{
   text-decoration: underline;
+}
+
+aside>ul{
+  border-left: 2px solid;
+  border-color: var(--foreground);
 }
 
 aside a:hover,
@@ -26,6 +36,7 @@ article>a:hover {
 article h2 {
   font-size: 1.5em;
   padding-top: 3.5rem;
+  text-align: left;
 }
 
 article img {
