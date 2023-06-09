@@ -312,11 +312,6 @@ label, legend, fieldset {
   font-weight: 600;
 }
 
-.notice {
-    background: var(--accent);
-    foreground: var(--background);
-    text-align: center;
-}
 
 nav {
     /* width: 100vw; */
