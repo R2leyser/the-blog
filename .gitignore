@@ -1,1 +1,2 @@
-blog/template.html
+./src/pages/blog/template.html
+./node_modules

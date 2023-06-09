@@ -1,0 +1,45 @@
+---
+import Banner from "../../components/banner.astro"
+
+import "../sakura-dark.css"
+import "./blog.css"
+---
+
+<!Doctype html>
+<title>Blog</title>
+
+<body>
+    <Banner />
+    <nav>
+        <ul>
+            <li><a href="../">home</a></li>
+            <li class="current"><a href=".">blog</a></li>
+            <li><a href="../projects/">projects</a></li>
+            <li><a href="../links/">links</a></li>
+        </ul>
+    </nav>
+    <h1>Blog</h1>
+    <hr>
+
+    <section class="post" onclick="window.location.href = './search-rabbit-hole.html'">
+        <h1 class="post-header">The search engine rabbit hole</h1> <small class="date">04/06/23</small>
+        <small>Just a ramble about search engines</small>
+    </section>
+
+    <section class="post" onclick="window.location.href = './mcstructures.html'">
+        <h1 class="post-header">How to use mcstructure files</h1> <small class="date">23/05/23</small>
+        <small>Everthing you need to know about mcstructure files on BE</small>
+    </section>
+
+    <section class="post" onclick="window.location.href = './text.html'">
+        <h1 class="post-header">Crazy text time!</h1> <small class="date">22/05/23</small>
+        <small>updates on what I've been up doing to this blog</small>
+    </section>
+
+    <section class="post" onclick="window.location.href = './first.html'">
+        <h1 class="post-header">The first proper post</h1> <small class="date">20/05/23</small>
+        <small>This is just me being happy about getting this to a usable state</small>
+    </section>
+</body>
+
+
