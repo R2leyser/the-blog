@@ -12,9 +12,9 @@ on:
         contents: read
       pages: write
       id-token: write
-
-    jobs:
-        build:
+      
+jobs:
+  build:
           runs-on: ubuntu-latest
           steps:
             - name: Check out your repository using git
@@ -38,8 +38,7 @@ on:
               uses: actions/upload-pages-artifact@v1
               with:
                 path: ./dist
-
-        deploy:
+  deploy:
           needs: build
           runs-on: ubuntu-latest
           environment:
