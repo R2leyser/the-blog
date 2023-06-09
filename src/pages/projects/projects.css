@@ -6,7 +6,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     grid-template-columns: 2fr 5fr;
-    gitd-template-rows: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
     column-gap: 3rem;
 }
 
