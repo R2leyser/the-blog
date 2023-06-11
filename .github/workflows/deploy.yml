@@ -1,5 +1,9 @@
 name: Deploy Astro to GitHub Pages
 
+permissions:
+  id-token: write
+  pages: write
+
 on:
 
   # Trigger the workflow every time you push to the `main` branch
