@@ -45,22 +45,33 @@ article img {
 }
 
 .post {
+  display: grid;
+  grid-template-rows: 3rem 6rem;
+  grid-template-columns: 8fr 1fr;
+  gap: 0;
   background-color: var(--secondary);
-  height: 90px;
+  height: 9rem;
   color: var(--foreground);
   padding: 0.4em;
   vertical-align: middle;
   line-height: 90px;       /* The same as your div height */
-  font-size: 30px;
+  font-size: 2em;
   margin: 2.5rem;
   margin-left:0px;margin-right:0px;
   transition: 0.3s;
 }
 
 .post .date {
-  position: absolute;
-  transform: translate(950%, -60%);
-  font-size: 15px;
+  grid-row: 1!important;
+  grid-column: 2 !important;
+  font-size: 40%;
+  padding:0;
+  margin-top:-3rem;
+  text-align: right;
+}
+
+.post>h1{
+    padding: 0;
 }
 
 .post .post-header {
@@ -68,13 +79,15 @@ article img {
   font-size: 30px;
   text-align-last: left;
   vertical-align: top;
-  margin-bottom: -10px;
   margin-top: 0px;
-  counter-increment: section-counter;
 }
 
 .post small {
   font-size: 70%;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  margin: 0;
+  padding: 0;
 }
 
 .post:hover h1 {
@@ -85,13 +98,8 @@ article img {
 }
 
 .post:hover {
-  height: 90px;
-  padding: 0.4em;
-  vertical-align: middle;
-  line-height: 90px;       /* The same as your div height */
-  font-size: 30px;
-  margin: 2.5rem;
-  margin-left:-5px;margin-right:-5px;
+  margin-left:-1rem;
+  margin-right:-1rem;
   transition: 0.3s;
 }
 
