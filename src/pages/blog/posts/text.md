@@ -1,4 +1,5 @@
 ---
+layout: ../../../components/postLayout.astro
 title: "Crazy text time!"
 description: "Updates on what I've been doing to this blog"
 date: "2023-05-22"
