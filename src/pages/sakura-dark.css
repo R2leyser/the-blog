@@ -6,11 +6,16 @@
  */
 /* Body */
 :root {
-    --foreground: #e3f5fc;
-    --background: #020d12;
-    --primary: #b051e6;
-    --secondary: #041A24;
-    --accent: #5719e6;
+    /* --foreground: #4C5E64; */
+    /* --background: #FDF6E3; */
+    --primary: #6C71C4;
+    /* --secondary: #EEE8D5; */
+    --accent: #2AA198;
+
+    --secondary: #073642;
+    --background: #002B36;
+    --foreground: #FDF6E3; 
+    --foreground-90: #93A1A1; */
 }
 
 html {

@@ -3,6 +3,7 @@ import "../sakura-dark.css"
 import "./projects.css"
 
 import Banner from "../../components/banner.astro"
+import Navbar from "../../components/navbar.astro"
 ---
 
 <title>Projects</title>
@@ -11,16 +12,7 @@ import Banner from "../../components/banner.astro"
 
 <body>
     <Banner/>
-    <nav>
-        <ul>
-            <li></li>
-            <li><a href="../">home</a></li>
-            <li><a href="../blog/">blog</a></li>
-            <li class="current"><a href="./">projects</a></li>
-            <li><a href="../links/">links</a></li>
-            <li></li>
-        </ul>
-    </nav>
+    <Navbar selected="projects"/>
     <h1>Projects</h1>
 
     <hr>

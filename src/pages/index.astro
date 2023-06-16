@@ -2,6 +2,7 @@
     import './sakura-dark.css';
 
     import Banner from "../components/banner.astro";
+    import Navbar from "../components/navbar.astro";
 ---
 
 <!Doctype html>
@@ -17,16 +18,7 @@
 
 <body>
     <Banner/>
-    <nav>
-        <ul>
-            <li></li>
-            <li class="current"> <a href=".">home</a> </li>
-            <li><a href="./blog/index.html">blog</a></li>
-            <li><a href="./projects/index.html">projects</a></li>
-            <li><a href="./links/index.html">links</a></li>
-            <li></li>
-        </ul>
-    </nav>
+    <Navbar selected="home"/>
 
     <h1>Hello! Welcome to my website!</h1>
 

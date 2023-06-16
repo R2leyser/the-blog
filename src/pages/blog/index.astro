@@ -1,11 +1,20 @@
 ---
 import Banner from "../../components/banner.astro"
+import Navbar from "../../components/navbar.astro"
 
 import "../sakura-dark.css"
 import "./blog.css"
 
-const allPosts = await Astro.glob('../blog/posts/*.astro')
-allPosts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+//import * as Test from "./posts/test.md"
+
+const allPostsMD = await Astro.glob('../blog/posts/*.md');
+allPostsMD.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
+
+for (let i in allPostsMD){
+    if (allPostsMD[i].frontmatter.draft) {
+        allPostsMD.splice(i, 1)
+    }
+}
 ---
 
 <!Doctype html>
@@ -13,23 +22,38 @@ allPosts.sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
 
 <body>
     <Banner />
-    <nav>
-        <ul>
-            <li><a href="../">home</a></li>
-            <li class="current"><a href=".">blog</a></li>
-            <li><a href="../projects/">projects</a></li>
-            <li><a href="../links/">links</a></li>
-        </ul>
-    </nav>
+    <Navbar selected="blog"/>
     <h1>Blog</h1>
     <hr>
 
+    <h2>
+        Latest post:
+    </h2>
     {
-        allPosts.map((post) => 
+        allPostsMD.splice(0, 1).map((firstPost) => (
+        <a href={firstPost.url}>
+            <section class="first-post">
+                <img src={firstPost.frontmatter.img}/>
+                <h1 class="post-header">{firstPost.frontmatter.title}</h1> 
+                <small class="date">{firstPost.frontmatter.date}</small>
+                <small>{firstPost.frontmatter.description}</small>
+                <p class="content">{firstPost.rawContent().split('\n').filter(line => line[0]!="#")[2]}</p>
+            </section>
+        </a>
+        )
+        )
+    }
+    <hr/>
+    <h2>
+        Older posts:
+    </h2>
+    {
+        allPostsMD.map((post) => 
             <a href={post.url}>
-                <section class="post" onclick='window.location.href = "{post.url}"'>
-                    <h1 class="post-header">{post.title}</h1> <small class="date">{post.date}</small>
-                    <small>{post.description}</small>
+                <section class="post">
+                    <h1 class="post-header">{post.frontmatter.title}</h1> 
+                    <small class="date">{post.frontmatter.date}</small>
+                    <small>{post.frontmatter.description}</small>
                 </section>
             </a>
         )

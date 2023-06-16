@@ -1,12 +1,7 @@
 ---
-import "../../sakura-dark.css"
-import "../blog.css"
-import "../prettify.css"
-import "../../fun-text.css"
-
-export const title= "Crazy text time!"
-export const description= "Updates on what I've been doing to this blog"
-export const date= "2023-05-22"
+title: "Crazy text time!"
+description: "Updates on what I've been doing to this blog"
+date: "2023-05-22"
 ---
 <!Doctype html>
 <title>

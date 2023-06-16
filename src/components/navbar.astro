@@ -1,0 +1,16 @@
+---
+
+const {selected} = Astro.props;
+
+---
+
+    <nav>
+        <ul>
+            <li class=""></li>
+            <li class= {selected === "home" ? "current" : "innactive"}> <a href="/">home</a> </li>
+            <li class= {selected === "blog" ? "current" : "innactive"}><a href="/blog">blog</a></li>
+            <li class= {selected === "projects" ? "current" : "innactive"}><a href="/projects">projects</a></li>
+            <li class= {selected === "links" ? "current" : "innactive"}><a href="/links">links</a></li>
+            <li></li>
+        </ul>
+    </nav>

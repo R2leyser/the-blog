@@ -1,0 +1,43 @@
+---
+import '../pages/sakura-dark.css'
+import '../pages/blog/blog.css'
+import "../pages/fun-text.css"
+import Navbar from "./navbar.astro"
+
+const {frontmatter, headings} = Astro.props;
+---
+
+<!Doctype html>
+<title>
+    {frontmatter.title}
+</title>
+<Navbar selected="blog"/>
+
+<h1>{frontmatter.title}</h1>
+<hr>
+<div class="blog-layout">
+<article>
+<slot/>
+<span style="text-align: right;"><p>-R2leyser</p></span>
+<hr>
+
+<small>{
+    frontmatter.date.split('-')
+        .reverse()
+        .join('/')
+        }
+</small>
+
+</article>
+<aside>
+    <ul>
+        {
+            headings.map( (heading) => 
+                <li><a href={"#" + heading.slug}>{heading.text}</a></li>
+            )
+        }
+    </ul>
+</aside>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=sunburst"></script>

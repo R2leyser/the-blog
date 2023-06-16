@@ -1,11 +1,7 @@
 ---
-import '../../sakura-dark.css'
-import '../blog.css'
-import "../../fun-text.css"
-
-export const title= "the first proper post"
-export const description= "Just me being happy about getting this to a usable state"
-export const date= "2023-05-20"
+title: "the first proper post"
+description: "Just me being happy about getting this to a usable state"
+date: "2023-05-20"
 ---
 
 <!Doctype html>

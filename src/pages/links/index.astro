@@ -3,6 +3,7 @@ import "../sakura-dark.css"
 import "./links.css"
 
 import Banner from "../../components/banner.astro"
+import Navbar from "../../components/navbar.astro"
 ---
 
 <!DOCTYPE html>
@@ -14,16 +15,7 @@ import Banner from "../../components/banner.astro"
 
 <body>
     <Banner/>
-    <nav>
-        <ul>
-            <li></li>
-            <li><a href="../">home</a></li>
-            <li><a href="../blog/">blog</a></li>
-            <li><a href="../projects/">projects</a></li>
-            <li class="current"><a href="../links/">links</a></li>
-            <li></li>
-        </ul>
-    </nav>
+    <Navbar selected="links"/>
     <h1>Links</h1>
     <hr>
     <p><b> These are my personal links: </b></p>
