@@ -1,4 +1,5 @@
 ---
+layout: ../../../components/postLayout.astro
 title: How to use mcstructure files
 description: Everthing you need to know about mcstructure files on BE
 date: "2023-05-23"
