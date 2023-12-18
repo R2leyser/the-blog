@@ -8,14 +8,22 @@
 :root {
     /* --foreground: #4C5E64; */
     /* --background: #FDF6E3; */
-    --primary: #6C71C4;
+    /* --primary: #6C71C4; */
     /* --secondary: #EEE8D5; */
-    --accent: #2AA198;
+    /* --accent: #2AA198; */
 
-    --secondary: #073642;
-    --background: #002B36;
-    --foreground: #FDF6E3; 
-    --foreground-90: #93A1A1; */
+
+    --background:#141b1e;
+    --foreground:#dadada;
+    --foreground-90:#97a09e;
+    --primary:#8ccf7e;
+    --accent:#6bc568;
+    --secondary:#3b4244;
+
+    /* --secondary: #073642; */
+    /* --background: #002B36; */
+    /* --foreground: #FDF6E3; */ 
+    /* --foreground-90: #93A1A1; *1/ */
 }
 
 html {
