@@ -99,19 +99,20 @@ article h2:hover::before {
 
 aside a,
 article a{
-  text-decoration: underline;
+  color: var(--foreground-90) 
 }
 
 aside>ul{
   border-left: 2px solid;
-  border-color: var(--foreground);
+  color: var(--foreground-90) ;
+  border-color: var(--foreground-90);
 }
 
-aside a:hover,
+aside li:hover a,
 article>a:hover {
   color:var(--accent);
   transition: 0.3s;
-  text-decoration: bold;
+  text-decoration: underline bold;
 }
 
 article h2 {
