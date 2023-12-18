@@ -1,9 +1,10 @@
 ---
+import "../sakura-dark.css"
+import "./blog.css"
+
 import Banner from "../../components/banner.astro"
 import Navbar from "../../components/navbar.astro"
 
-import "../sakura-dark.css"
-import "./blog.css"
 
 //import * as Test from "./posts/test.md"
 
@@ -18,7 +19,13 @@ for (let i in allPostsMD){
 ---
 
 <!Doctype html>
-<title>Blog</title>
+<head>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="R2's blog">
+    <meta property="og:description" content="My blog!">
+    <meta name="theme-color" content="#8ccf7e">
+    <title>Blog</title>
+</head>
 
 <body>
     <Banner />
@@ -59,5 +66,3 @@ for (let i in allPostsMD){
         )
     }
 </body>
-
-

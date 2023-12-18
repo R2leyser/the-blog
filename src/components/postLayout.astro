@@ -8,9 +8,17 @@ const {frontmatter, headings} = Astro.props;
 ---
 
 <!Doctype html>
-<title>
-    {frontmatter.title}
-</title>
+<head>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content={frontmatter.title + " - R2leyser"}>
+    <meta property="og:description" content={frontmatter.description}>
+    <meta name="theme-color" content="#8ccf7e">
+
+    <title> {frontmatter.title} </title>
+</head>
+
+
+
 <Navbar selected="blog"/>
 
 <h1>{frontmatter.title}</h1>

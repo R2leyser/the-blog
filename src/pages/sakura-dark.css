@@ -18,7 +18,7 @@
     --foreground-90:#97a09e;
     --primary:#8ccf7e;
     --accent:#6bc568;
-    --secondary:#3b4244;
+    --secondary:#1b2326;
 
     /* --secondary: #073642; */
     /* --background: #002B36; */
@@ -36,7 +36,7 @@ html {
 body {
   font-size: 1.8rem;
   line-height: 1.618;
-  max-width: 38em;
+  max-width: 50em;
   width: 70ch;
   margin: auto;
   color: var(--foreground);
