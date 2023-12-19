@@ -141,11 +141,13 @@ article img {
   margin: 2.5rem;
   margin-left:0px;margin-right:0px;
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .post .date {
   grid-row: 1!important;
   grid-column: 2 !important;
+
   font-size: 40%;
   padding:0;
   margin-top:-3rem;
