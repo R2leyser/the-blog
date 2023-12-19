@@ -47,22 +47,6 @@ body {
   /* padding: 13px; */
 }
 
-@media (max-width: 684px) {
-  body {
-  font-size: 1.6rem;
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 500px) {
-  body {
-    font-size: 1rem;
-  }
-  nav {
-    font-size: 150%;
-    margin:auto;
-  }
-}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
@@ -394,4 +378,31 @@ nav li.current {
     border-right: 2px solid var(--foreground);
     border-top: 2px solid var(--foreground);
     border-bottom: none;
+}
+
+@media (max-aspect-ratio: 15/16) {
+    body{
+        max-width: 90%;
+    }
+
+    nav {
+        font-size: 150%;
+        margin:auto;
+    }
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1rem;
+  }
+  nav {
+    font-size: 150%;
+    margin:auto;
+  }
 }

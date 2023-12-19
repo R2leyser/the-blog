@@ -209,7 +209,7 @@ aside {
 }
 
 
-@media (max-width: 684px) {
+@media (max-aspect-ratio: 15/16) {
 
     .first-post img {
         margin: 0;
