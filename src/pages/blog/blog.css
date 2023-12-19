@@ -228,7 +228,7 @@ aside {
     }
 
     .first-post>small{
-        grid-row: 3;
+        grid-row: 4;
         grid-column:1;
         color: var(--foreground-90);
     }
@@ -244,7 +244,7 @@ aside {
     }
 
     .first-post>.date{
-        grid-row: 4;
+        grid-row: 3;
         grid-column:1;
         color: var(--foreground-90);
     }
@@ -255,6 +255,10 @@ aside {
         grid-template-rows: 9fr 1fr 1fr 1fr 7fr;
     }
 
+
+    .first-post h1 {
+        text-align: center;
+    }
     .first-post {
         text-align: justify;
     }

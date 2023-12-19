@@ -383,6 +383,7 @@ nav li.current {
 @media (max-aspect-ratio: 15/16) {
     body{
         max-width: 90%;
+        width: 90%;
     }
 
     nav {
