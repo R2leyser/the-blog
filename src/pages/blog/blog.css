@@ -102,6 +102,16 @@ article a{
   color: var(--foreground-90) 
 }
 
+aside a:active,
+article a:active{
+  color: var(--foreground-90) 
+}
+
+aside a:visited,
+article a:visited{
+  color: var(--foreground-90) 
+}
+
 aside>ul{
   border-left: 2px solid;
   color: var(--foreground-90) ;
@@ -187,7 +197,10 @@ article img {
   transition: 0.3s;
 }
 
+
+
 aside {
   position: sticky;
   margin-top: 10rem;
 }
+
