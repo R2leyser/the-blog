@@ -37,25 +37,30 @@ html {
 body {
   font-size: 1.8rem;
   line-height: 1.618;
-  max-width: 50em;
+  max-width: 70%;
   width: 70ch;
   margin: auto;
   color: var(--foreground);
   background-color: var(--background);
-  padding: 0 2rem 30vh 2rem;
+  padding-bottom: 10vh;
   height:100%
   /* padding: 13px; */
 }
 
 @media (max-width: 684px) {
   body {
-    font-size: 1.53rem;
+  font-size: 1.6rem;
+    max-width: 90%;
   }
 }
 
-@media (max-width: 382px) {
+@media (max-width: 500px) {
   body {
-    font-size: 1.35rem;
+    font-size: 1rem;
+  }
+  nav {
+    font-size: 150%;
+    margin:auto;
   }
 }
 
