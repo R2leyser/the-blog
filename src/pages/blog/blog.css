@@ -72,11 +72,11 @@
 
 .blog-layout{
     display:flex;
+    flex-direction: column-reverse;
     gap: 2rem;
 }
 
 article {
-    width: 130rem;
     text-align: justify;
 }
 
@@ -85,7 +85,7 @@ article h1 {
 }
 
 article h2::before {
-    content: '&';
+    content: '& ';
     color: var(--accent);
     transition:0.2s;
     transform: translate(10em);
@@ -94,10 +94,22 @@ article h2::before {
 
 article h2:hover::before {
     opacity:1;
-    content: '&';
+    content: '& ';
     position:relative;
     transform: translate(10em);
     transition:0.2s;
+}
+
+.blog-layout{
+    gap: 0;
+}
+
+
+aside {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #11181A;
 }
 
 aside a,
@@ -116,9 +128,9 @@ article a:visited{
 }
 
 aside>ul{
-  border-left: 2px solid;
+  padding-block: 2rem;
+  margin-bottom: 0;
   color: var(--foreground-90) ;
-  border-color: var(--foreground-90);
 }
 
 aside li:hover a,
@@ -130,8 +142,12 @@ article>a:hover {
 
 article h2 {
   font-size: 1.5em;
-  padding-top: 3.5rem;
+  padding-block: 1.75rem;
   text-align: left;
+}
+
+article h2:first-of-type {
+    padding-top: 0;
 }
 
 article img {
@@ -201,15 +217,8 @@ article img {
   transition: 0.3s;
 }
 
-
-
-aside {
-  position: sticky;
-  margin-top: 10rem;
-}
-
-
 @media (max-aspect-ratio: 15/16) {
+
 
     .first-post img {
         margin: 0;
